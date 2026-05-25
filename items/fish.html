@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鱼类大全 - Stardew Valley 攻略站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .fish-section {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .fish-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .fish-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-color);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .fish-table th,
+        .fish-table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .fish-table th {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+        .fish-name {
+            font-weight: bold;
+        }
+        .fish-price {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        .season-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .spring { background: #a8e6cf; }
+        .summer { background: #fbd38d; }
+        .fall { background: #ffaaa5; }
+        .winter { background: #d8b4b4; }
+        .size-badge {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+        }
+        .location-info {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .special-badge {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🌾 Stardew Valley 攻略站</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">📦 物品百科</a>
+                <a href="seeds.html" class="nav-link">🌱 种子</a>
+                <a href="tools.html" class="nav-link">🔧 工具</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>🐟 鱼类大全</h1>
+            <p>所有鱼类信息、售价、钓点位置！</p>
+
+            <!-- 小型鱼类 -->
+            <div class="fish-section">
+                <h3>🐟 小型鱼类（容易钓取）</h3>
+                <table class="fish-table">
+                    <thead>
+                        <tr>
+                            <th>鱼类</th>
+                            <th>价格</th>
+                            <th>季节</th>
+                            <th>大小</th>
+                            <th>钓点</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="fish-name">鲤鱼</span></td>
+                            <td><span class="fish-price">30g</span></td>
+                            <td><span class="season-dot spring"></span><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">小</span></td>
+                            <td class="location-info">河面任意钓点</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fish-name">鲑鱼</span></td>
+                            <td><span class="fish-price">35g</span></td>
+                            <td><span class="season-dot spring"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">小</span></td>
+                            <td class="location-info">溪水流速快处</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fish-name">虾</span></td>
+                            <td><span class="fish-price">40g</span></td>
+                            <td><span class="season-dot spring"></span><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">小</span></td>
+                            <td class="location-info">小池塘/河面</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fish-name">河虾</span></td>
+                            <td><span class="fish-price">35g</span></td>
+                            <td><span class="season-dot spring"></span><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">小</span></td>
+                            <td class="location-info">河面任意钓点</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fish-name">鲇鱼</span></td>
+                            <td><span class="fish-price">45g</span></td>
+                            <td><span class="season-dot spring"></span><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">小</span></td>
+                            <td class="location-info">河面任意钓点</td>
+                        </tr>
+                        <tr style="background: var(--bg-color);">
+                            <td><span class="fish-name">小龙虾</span></td>
+                            <td><span class="fish-price">75g</span></td>
+                            <td><span class="season-dot summer"></span></td>
+                            <td><span class="size-badge">小</span></td>
+                            <td class="location-info">浅滩/河面</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 中型鱼类 -->
+            <div class="fish-section">
+                <h3>🐠 中型鱼类（需要诱饵块）</h3>
+                <table class="fish-table">
+                    <thead>
+                        <tr>
+                            <th>鱼类</th>
+                            <th>价格</th>
+                            <th>季节</th>
+                            <th>大小</th>
+                            <th>钓点</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="fish-name">比目鱼</span></td>
+                            <td><span class="fish-price">50g</span></td>
+                            <td><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">中</span></td>
+                            <td class="location-info">浅滩</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fish-name">海鳗</span></td>
+                            <td><span class="fish-price">60g</span></td>
+                            <td><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">中</span></td>
+                            <td class="location-info">海边钓点</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fish-name">虾虎鱼</span></td>
+                            <td><span class="fish-price">80g</span></td>
+                            <td><span class="season-dot summer"></span></td>
+                            <td><span class="size-badge">中</span></td>
+                            <td class="location-info">小池塘/河面</td>
+                        </tr>
+                        <tr style="background: var(--bg-color);">
+                            <td><span class="fish-name">鲈鱼</span></td>
+                            <td><span class="fish-price">125g</span></td>
+                            <td><span class="season-dot summer"></span></td>
+                            <td><span class="size-badge">中</span></td>
+                            <td class="location-info">河流中下游</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fish-name">比目鲽</span></td>
+                            <td><span class="fish-price">150g</span></td>
+                            <td><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">中</span></td>
+                            <td class="location-info">浅滩</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 大型鱼类 -->
+            <div class="fish-section">
+                <h3>🐡 大型鱼类（稀有）</h3>
+                <table class="fish-table">
+                    <thead>
+                        <tr>
+                            <th>鱼类</th>
+                            <th>价格</th>
+                            <th>季节</th>
+                            <th>大小</th>
+                            <th>钓点</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="fish-name">狗鱼</span></td>
+                            <td><span class="fish-price">150g</span></td>
+                            <td><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">大</span></td>
+                            <td class="location-info">河流上游</td>
+                        </tr>
+                        <tr style="background: var(--bg-color);">
+                            <td><span class="fish-name">海鳟鱼</span></td>
+                            <td><span class="fish-price">175g</span></td>
+                            <td><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">大</span></td>
+                            <td class="location-info">码头/海边</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fish-name">鲟鱼</span></td>
+                            <td><span class="fish-price">180g</span></td>
+                            <td><span class="season-dot spring"></span><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">大</span></td>
+                            <td class="location-info">深水</td>
+                        </tr>
+                        <tr style="background: var(--bg-color);">
+                            <td><span class="fish-name">河豚</span></td>
+                            <td><span class="fish-price">200g</span></td>
+                            <td><span class="season-dot summer"></span></td>
+                            <td><span class="size-badge">大</span></td>
+                            <td class="location-info">河面</td>
+                            <td><span class="special-badge">特殊</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="fish-name">黑斑狗鱼</span></td>
+                            <td><span class="fish-price">220g</span></td>
+                            <td><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">大</span></td>
+                            <td class="location-info">河流上游</td>
+                        </tr>
+                        <tr style="background: var(--bg-color);">
+                            <td><span class="fish-name">海鞘</span></td>
+                            <td><span class="fish-price">300g</span></td>
+                            <td><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">大</span></td>
+                            <td class="location-info">码头</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fish-name">海鲂鱼</span></td>
+                            <td><span class="fish-price">300g</span></td>
+                            <td><span class="season-dot summer"></span><span class="season-dot fall"></span></td>
+                            <td><span class="size-badge">大</span></td>
+                            <td class="location-info">河面</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 特殊鱼类 -->
+            <div class="fish-section">
+                <h3>✨ 特殊鱼类（火山口/温泉）</h3>
+                <table class="fish-table">
+                    <thead>
+                        <tr>
+                            <th>鱼类</th>
+                            <th>价格</th>
+                            <th>季节</th>
+                            <th>大小</th>
+                            <th>钓点</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="fish-name">深海龙鱼</span></td>
+                            <td><span class="fish-price">400g</span></td>
+                            <td><span class="season-dot summer"></span></td>
+                            <td><span class="size-badge">特</span></td>
+                            <td class="location-info">火山口</td>
+                        </tr>
+                        <tr style="background: var(--bg-color);">
+                            <td><span class="fish-name">火山狗鱼</span></td>
+                            <td><span class="fish-price">300g</span></td>
+                            <td><span class="season-dot summer"></span></td>
+                            <td><span class="size-badge">特</span></td>
+                            <td class="location-info">火山口</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 鱼饵建议 -->
+            <div class="usage-tips">
+                <h3>🪱 鱼饵建议</h3>
+                <ul style="margin-left: 1rem; line-height: 2;">
+                    <li><strong>虫子 (25g):</strong> 万能鱼饵，适合鲤鱼、河虾、鲌鱼等小型鱼</li>
+                    <li><strong>小麦 (20g):</strong> 适合虾、小龙虾、比目鱼等食草鱼</li>
+                    <li><strong>玉米 (100g):</strong> 适合鲟鱼、河豚等大型鱼</li>
+                    <li><strong>诱饵块 (700g):</strong> 制作后适合所有鱼，性价比最高，推荐制作</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stardew Valley 攻略站</p>
+        </div>
+    </footer>
+</body>
+</html>
