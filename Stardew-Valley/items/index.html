@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物品百科 - Stardew Valley 攻略站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .item-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .item-card:hover {
+            transform: translateY(-4px);
+        }
+        .item-icon {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .item-name {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .item-type {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        .item-cost {
+            text-align: center;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .item-desc {
+            color: #666;
+            text-align: center;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🌾 Stardew Valley 攻略站</h1>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">⬅ 返回首页</a>
+                <a href="seeds.html" class="nav-link">🌱 种子</a>
+                <a href="tools.html" class="nav-link">🔧 工具</a>
+                <a href="fish.html" class="nav-link">🐟 鱼类</a>
+                <a href="minerals.html" class="nav-link">💎 矿石</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>📦 物品百科</h1>
+            <p>所有重要物品数据查询！</p>
+
+            <!-- 种子类 -->
+            <div class="item-grid">
+                <div class="item-card">
+                    <div class="item-icon">🌱</div>
+                    <div class="item-name">种子组</div>
+                    <div class="item-type">消耗品</div>
+                    <div class="item-desc">
+                        玉米 (60g)<br>
+                        豌豆 (45g)<br>
+                        胡萝卜 (60g)<br>
+                        土豆 (80g)<br>
+                        番茄 (150g)
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">🍓</div>
+                    <div class="item-name">果树种子</div>
+                    <div class="item-type">消耗品</div>
+                    <div class="item-desc">
+                        苹果树 (500g)<br>
+                        梨树 (500g)<br>
+                        桃树 (600g)<br>
+                        樱桃树 (1000g)
+                    </div>
+                </div>
+            </div>
+
+            <!-- 工具类 -->
+            <div class="item-grid">
+                <div class="item-card">
+                    <div class="item-icon">🪮</div>
+                    <div class="item-name">铜铲</div>
+                    <div class="item-type">工具</div>
+                    <div class="item-desc">
+                        售价：20g<br>
+                        耐久：无限<br>
+                        用途：清理土地、挖石头
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">🔨</div>
+                    <div class="item-name">铁斧</div>
+                    <div class="item-type">工具</div>
+                    <div class="item-desc">
+                        售价：400g<br>
+                        耐久：1000<br>
+                        用途：砍树、挖矿
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">🎣</div>
+                    <div class="item-name">基础鱼竿</div>
+                    <div class="item-type">工具</div>
+                    <div class="item-desc">
+                        初始装备<br>
+                        钓获上限：50<br>
+                        钓获：小型鱼类
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">🪓</div>
+                    <div class="item-name">金斧</div>
+                    <div class="item-type">工具</div>
+                    <div class="item-desc">
+                        售价：1000g<br>
+                        耐久：无限<br>
+                        用途：砍树、挖矿
+                    </div>
+                </div>
+            </div>
+
+            <!-- 矿石类 -->
+            <div class="item-grid">
+                <div class="item-card">
+                    <div class="item-icon">🔩</div>
+                    <div class="item-name">铁矿</div>
+                    <div class="item-type">矿石</div>
+                    <div class="item-desc">
+                        售价：20g<br>
+                        矿洞 1 层产出<br>
+                        用途：制作工具
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">🟤</div>
+                    <div class="item-name">煤矿</div>
+                    <div class="item-type">矿石</div>
+                    <div class="item-desc">
+                        售价：50g<br>
+                        深坑产出<br>
+                        用途：制作燃料
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">🟡</div>
+                    <div class="item-name">金矿</div>
+                    <div class="item-type">矿石</div>
+                    <div class="item-desc">
+                        售价：400g<br>
+                        深坑深层<br>
+                        用途：制作高级工具
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">✨</div>
+                    <div class="item-name">秘银</div>
+                    <div class="item-type">稀有矿石</div>
+                    <div class="item-desc">
+                        售价：2500g<br>
+                        热浪矿坑产出<br>
+                        用途：制作秘银装备
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">🌟</div>
+                    <div class="item-name">陨铁</div>
+                    <div class="item-type">传说矿石</div>
+                    <div class="item-desc">
+                        售价：5000g<br>
+                        蛇发女妖洞穴<br>
+                        用途：制作大师装备
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stardew Valley 攻略站</p>
+        </div>
+    </footer>
+</body>
+</html>

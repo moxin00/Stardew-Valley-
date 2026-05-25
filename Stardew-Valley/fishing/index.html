@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钓鱼指南 - Stardew Valley 攻略站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .fish-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .fish-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .fish-card:hover {
+            transform: translateY(-4px);
+        }
+        .fish-name {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+        }
+        .fish-size {
+            color: #666;
+            font-size: 0.85rem;
+        }
+        .fish-location {
+            display: block;
+            margin-top: 0.5rem;
+            padding: 0.3rem;
+            background: var(--bg-color);
+            border-radius: 5px;
+            font-size: 0.85rem;
+        }
+        .season-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .spring { background: #a8e6cf; }
+        .summer { background: #fbd38d; }
+        .fall { background: #ffaaa5; }
+        .winter { background: #d8b4b4; }
+        .location-list {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .location-item {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .location-item:last-child {
+            border-bottom: none;
+        }
+        .location-name {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🌾 Stardew Valley 攻略站</h1>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">⬅ 返回首页</a>
+                <a href="../planting/index.html" class="nav-link">🌱 种植</a>
+                <a href="locations.html" class="nav-link">📍 钓点指南</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>🎣 钓鱼图鉴</h1>
+            <p>掌握所有鱼类信息，成为钓鱼大师！</p>
+
+            <!-- 鱼类列表 -->
+            <div class="fish-grid">
+                <div class="fish-card">
+                    <div class="fish-name">鲤鱼</div>
+                    <div class="fish-size">大小：普通</div>
+                    <span class="season-dot spring"></span>
+                    <span class="season-dot summer"></span>
+                    <span class="fish-location">河边任意钓点</span>
+                </div>
+                <div class="fish-card">
+                    <div class="fish-name">鲈鱼</div>
+                    <div class="fish-size">大小：普通</div>
+                    <span class="season-dot summer"></span>
+                    <span class="fish-location">河流中下游</span>
+                </div>
+                <div class="fish-card">
+                    <div class="fish-name">狗鱼</div>
+                    <div class="fish-size">大小：普通</div>
+                    <span class="season-dot summer"></span>
+                    <span class="season-dot fall"></span>
+                    <span class="fish-location">河流上游</span>
+                </div>
+                <div class="fish-card">
+                    <div class="fish-name">比目鱼</div>
+                    <div class="fish-size">大小：普通</div>
+                    <span class="season-dot summer"></span>
+                    <span class="season-dot fall"></span>
+                    <span class="fish-location">浅滩</span>
+                </div>
+                <div class="fish-card">
+                    <div class="fish-name">鲑鱼</div>
+                    <div class="fish-size">大小：普通</div>
+                    <span class="season-dot spring"></span>
+                    <span class="season-dot fall"></span>
+                    <span class="fish-location">溪水流速快处</span>
+                </div>
+                <div class="fish-card">
+                    <div class="fish-name">鲟鱼</div>
+                    <div class="fish-size">大小：普通</div>
+                    <span class="season-dot spring"></span>
+                    <span class="season-dot summer"></span>
+                    <span class="season-dot fall"></span>
+                    <span class="fish-location">深水</span>
+                </div>
+            </div>
+
+            <!-- 钓点位置 -->
+            <div class="location-list">
+                <h2>📍 主要钓点位置</h2>
+                <div class="location-item">
+                    <div class="location-name">河面钓点</div>
+                    <p>覆盖河流大部分区域，适合钓鲤鱼、鲈鱼、狗鱼</p>
+                </div>
+                <div class="location-item">
+                    <div class="location-name">浅滩</div>
+                    <p>适合钓比目鱼、虾、鲑鱼</p>
+                </div>
+                <div class="location-item">
+                    <div class="location-name">深水</div>
+                    <p>适合钓鲟鱼、各种大型鱼</p>
+                </div>
+            </div>
+
+            <!-- 鱼饵建议 -->
+            <div class="quick-tips">
+                <h2>🪱 鱼饵建议</h2>
+                <ul>
+                    <li><strong>虫子:</strong> 万能鱼饵，适合钓几乎所有小型鱼</li>
+                    <li><strong>小麦:</strong> 适合鲤鱼、虾等食草鱼</li>
+                    <li><strong>玉米:</strong> 适合比目鱼、鲟鱼等大型鱼</li>
+                    <li><strong>诱饵块:</strong> 适合所有鱼，建议制作</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stardew Valley 攻略站</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,269 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4a7c59;
+    --secondary-color: #8b6c4b;
+    --accent-color: #e6a86c;
+    --bg-color: #f5f0e6;
+    --text-color: #2d3436;
+    --card-bg: #ffffff;
+    --border-color: #d4c5b0;
+}
+
+body {
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部样式 */
+.header {
+    background: linear-gradient(135deg, var(--primary-color), #3a6c49);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+    background: rgba(255,255,255,0.1);
+}
+
+.nav-link:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.search-box {
+    display: flex;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    width: 200px;
+}
+
+.search-input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.search-btn {
+    border: none;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* 主内容区 */
+.main-content {
+    padding: 2rem 0;
+}
+
+/* 欢迎区 */
+.welcome-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.welcome-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-list {
+    list-style: none;
+    text-align: left;
+    max-width: 500px;
+    margin: 1.5rem auto;
+}
+
+.feature-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(74, 124, 89, 0.4);
+}
+
+/* 卡片网格 */
+.guide-cards, .popular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.guide-card, .popular-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.guide-card:hover, .popular-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.guide-card .icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.guide-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.popular-card .tag {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.popular-card h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.popular-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 新闻区 */
+.news-section {
+    margin-top: 2rem;
+}
+
+.news-list {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.news-item {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item .date {
+    color: var(--secondary-color);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+/* 页脚 */
+.footer {
+    background: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .guide-cards, .popular-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-cards, .popular-grid {
+        grid-template-columns: 1fr;
+    }
+}

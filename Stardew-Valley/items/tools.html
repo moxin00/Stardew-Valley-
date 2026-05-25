@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工具大全 - Stardew Valley 攻略站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .tool-category {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .tool-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+        .tool-card {
+            background: var(--bg-color);
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .tool-card:hover {
+            transform: translateY(-4px);
+        }
+        .tool-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .tool-name {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        .tool-price {
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        .tool-耐久 {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .upgrade-level {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        .material-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .material-info {
+            flex: 1;
+        }
+        .material-name {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+        }
+        .material-sell {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        .material-level {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🌾 Stardew Valley 攻略站</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">📦 物品百科</a>
+                <a href="seeds.html" class="nav-link">🌱 种子</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>🔧 工具大全</h1>
+            <p>所有工具升级路径、价格、耐久度！</p>
+
+            <!-- 挖掘工具 -->
+            <div class="tool-category">
+                <h3>⛏️ 挖掘工具（铲子）</h3>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">🛡️</div>
+                        <div class="tool-name">石铲</div>
+                        <div class="tool-price">20g</div>
+                        <div class="tool-耐久">耐久：无限</div>
+                        <div class="upgrade-level">基础</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🛡️</div>
+                        <div class="tool-name">铜铲</div>
+                        <div class="tool-price">400g</div>
+                        <div class="tool-耐久">耐久：无限</div>
+                        <div class="upgrade-level">铜</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🛡️</div>
+                        <div class="tool-name">铁铲</div>
+                        <div class="tool-price">750g</div>
+                        <div class="tool-耐久">耐久：无限</div>
+                        <div class="upgrade-level">铁</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🛡️</div>
+                        <div class="tool-name">金铲</div>
+                        <div class="tool-price">1000g</div>
+                        <div class="tool-耐久">耐久：无限</div>
+                        <div class="upgrade-level">金</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">✨</div>
+                        <div class="tool-name">秘银铲</div>
+                        <div class="tool-price">3000g</div>
+                        <div class="tool-耐久">耐久：无限</div>
+                        <div class="upgrade-level">秘银</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🌟</div>
+                        <div class="tool-name">陨铁铲</div>
+                        <div class="tool-price">5000g</div>
+                        <div class="tool-耐久">耐久：无限</div>
+                        <div class="upgrade-level">陨铁</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 砍伐工具 -->
+            <div class="tool-category">
+                <h3>🪓 砍伐工具（斧头）</h3>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">🪓</div>
+                        <div class="tool-name">铜斧</div>
+                        <div class="tool-price">300g</div>
+                        <div class="tool-耐久">耐久：200</div>
+                        <div class="upgrade-level">铜</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🪓</div>
+                        <div class="tool-name">铁斧</div>
+                        <div class="tool-price">600g</div>
+                        <div class="tool-耐久">耐久：450</div>
+                        <div class="upgrade-level">铁</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🪓</div>
+                        <div class="tool-name">金斧</div>
+                        <div class="tool-price">900g</div>
+                        <div class="tool-耐久">耐久：无限</div>
+                        <div class="upgrade-level">金</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">✨</div>
+                        <div class="tool-name">秘银斧</div>
+                        <div class="tool-price">2600g</div>
+                        <div class="tool-耐久">耐久：无限</div>
+                        <div class="upgrade-level">秘银</div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🌟</div>
+                        <div class="tool-name">陨铁斧</div>
+                        <div class="tool-price">4500g</div>
+                        <div class="tool-耐久">耐久：无限</div>
+                        <div class="upgrade-level">陨铁</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 矿石材料 -->
+            <div class="tool-category">
+                <h3>💎 矿石材料（按品质排序）</h3>
+                <div class="material-card">
+                    <div class="material-info">
+                        <div class="material-name">🔩 铜矿</div>
+                        <div class="material-sell">售价：30g</div>
+                    </div>
+                    <div class="material-level">第 1 层</div>
+                </div>
+                <div class="material-card">
+                    <div class="material-info">
+                        <div class="material-name">🔩 铁矿</div>
+                        <div class="material-sell">售价：20g</div>
+                    </div>
+                    <div class="material-level">第 1-15 层</div>
+                </div>
+                <div class="material-card">
+                    <div class="material-info">
+                        <div class="material-name">🟤 煤矿</div>
+                        <div class="material-sell">售价：50g</div>
+                    </div>
+                    <div class="material-level">第 26 层+</div>
+                </div>
+                <div class="material-card">
+                    <div class="material-info">
+                        <div class="material-name">🟡 金矿</div>
+                        <div class="material-sell">售价：400g</div>
+                    </div>
+                    <div class="material-level">第 26-70 层</div>
+                </div>
+                <div class="material-card">
+                    <div class="material-info">
+                        <div class="material-name">✨ 秘银</div>
+                        <div class="material-sell">售价：2500g</div>
+                    </div>
+                    <div class="material-level">热浪矿坑</div>
+                </div>
+                <div class="material-card">
+                    <div class="material-info">
+                        <div class="material-name">🌟 陨铁</div>
+                        <div class="material-sell">售价：5000g</div>
+                    </div>
+                    <div class="material-level">蛇发女妖洞穴</div>
+                </div>
+            </div>
+
+            <!-- 工具使用建议 -->
+            <div class="usage-tips">
+                <h3>💡 工具使用建议</h3>
+                <ul style="margin-left: 1rem; line-height: 2;">
+                    <li><strong>石铲:</strong> 开局使用，清理农场必备</li>
+                    <li><strong>铜铲:</strong> 第 2 周购买，性价比高</li>
+                    <li><strong>铁铲:</strong> 第 3 周购买，提升挖掘速度</li>
+                    <li><strong>金铲:</strong> 永久工具，无限耐久</li>
+                    <li><strong>斧头:</strong> 铜斧够用，等有钱再升级</li>
+                    <li><strong>秘银/陨铁:</strong> 后期才需要购买</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stardew Valley 攻略站</p>
+        </div>
+    </footer>
+</body>
+</html>

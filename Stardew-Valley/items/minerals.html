@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>矿石材料大全 - Stardew Valley 攻略站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .material-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-top: 1rem;
+        }
+        .material-table th,
+        .material-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .material-table th {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+        .material-table tr:hover {
+            background: #f9f9f9;
+        }
+        .material-name {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .material-price {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        .material-sell {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .material-tier {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .tier-1 { background: #95a5a6; color: white; }
+        .tier-2 { background: var(--secondary-color); color: white; }
+        .tier-3 { background: var(--accent-color); color: white; }
+        .tier-special { background: #8e44ad; color: white; }
+        .tier-legendary { background: #f39c12; color: white; }
+        .depth-info {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .usage-info {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .usage-badge {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            margin-left: 0.5rem;
+        }
+        .crafting-list {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0 0;
+            font-size: 0.85rem;
+        }
+        .crafting-list li {
+            padding: 0.2rem 0;
+            color: #666;
+        }
+        .tool-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .tool-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .tool-name {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .tool-material {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🌾 Stardew Valley 攻略站</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">📦 物品百科</a>
+                <a href="seeds.html" class="nav-link">🌱 种子</a>
+                <a href="tools.html" class="nav-link">🔧 工具</a>
+                <a href="fish.html" class="nav-link">🐟 鱼类</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>💎 矿石材料大全</h1>
+            <p>所有矿石属性、价格、用途！</p>
+
+            <!-- 矿石表格 -->
+            <div class="tip-section">
+                <h3>📊 矿石对比表</h3>
+                <table class="material-table">
+                    <thead>
+                        <tr>
+                            <th>矿石</th>
+                            <th>售价</th>
+                            <th>可卖/用途</th>
+                            <th>获取层级</th>
+                            <th>品质</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="material-name">🔩 铜矿</div>
+                                <div class="depth-info">第 1 层</div>
+                            </td>
+                            <td><span class="material-price">30g</span></td>
+                            <td><span class="usage-badge">出售</span></td>
+                            <td>第 1 层</td>
+                            <td><span class="material-tier tier-1">基础</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="material-name">🔩 铁矿</div>
+                                <div class="depth-info">第 1-15 层</div>
+                            </td>
+                            <td><span class="material-price">20g</span></td>
+                            <td><span class="usage-badge">出售</span></td>
+                            <td>第 1-15 层</td>
+                            <td><span class="material-tier tier-1">基础</span></td>
+                        </tr>
+                        <tr style="background: var(--bg-color);">
+                            <td>
+                                <div class="material-name">🟤 煤矿</div>
+                                <div class="depth-info">第 26 层+</div>
+                            </td>
+                            <td><span class="material-price">50g</span></td>
+                            <td><span class="usage-badge">出售</span></td>
+                            <td>第 26-48 层</td>
+                            <td><span class="material-tier tier-1">基础</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="material-name">🟡 金矿</div>
+                                <div class="depth-info">第 26-70 层</div>
+                            </td>
+                            <td><span class="material-price">400g</span></td>
+                            <td><span class="usage-badge">出售</span></td>
+                            <td>第 26-70 层</td>
+                            <td><span class="material-tier tier-2">稀有</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="material-name">✨ 秘银</div>
+                                <div class="depth-info">热浪矿坑</div>
+                            </td>
+                            <td><span class="material-price">2500g</span></td>
+                            <td><span class="usage-badge">出售</span></td>
+                            <td>热浪矿坑</td>
+                            <td><span class="material-tier tier-special">特殊</span></td>
+                        </tr>
+                        <tr style="background: var(--bg-color);">
+                            <td>
+                                <div class="material-name">🌟 陨铁</div>
+                                <div class="depth-info">蛇发女妖洞穴</div>
+                            </td>
+                            <td><span class="material-price">5000g</span></td>
+                            <td><span class="usage-badge">出售</span></td>
+                            <td>蛇发女妖洞穴</td>
+                            <td><span class="material-tier tier-legendary">传说</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 工具升级路径 -->
+            <h2>🔧 工具升级路径</h2>
+            <div class="tool-card">
+                <div class="tool-icon">⛏️</div>
+                <div class="tool-name">石铲</div>
+                <div class="tool-material">🔩 无需矿石</div>
+                <div style="color: #666; margin-top: 0.5rem;">
+                    售价：20g | 耐久：无限 | 用途：清理土地、挖石头
+                </div>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">⛏️</div>
+                <div class="tool-name">铜铲</div>
+                <div class="tool-material">🔩 10 个铁矿</div>
+                <div style="color: #666; margin-top: 0.5rem;">
+                    售价：400g | 耐久：无限 | 用途：清理土地、挖石头
+                </div>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">⛏️</div>
+                <div class="tool-name">铁铲</div>
+                <div class="tool-material">🔩 3 个金矿 + 12 个秘银</div>
+                <div style="color: #666; margin-top: 0.5rem;">
+                    售价：750g | 耐久：无限 | 用途：清理土地、挖石头
+                </div>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">⛏️</div>
+                <div class="tool-name">金铲</div>
+                <div class="tool-material">🌟 1 个陨铁</div>
+                <div style="color: #666; margin-top: 0.5rem;">
+                    售价：1000g | 耐久：无限 | 用途：清理土地、挖石头
+                </div>
+            </div>
+
+            <!-- 斧头升级路径 -->
+            <div class="tool-card">
+                <div class="tool-icon">🪓</div>
+                <div class="tool-name">铜斧</div>
+                <div class="tool-material">🔩 25 个铁矿</div>
+                <div style="color: #666; margin-top: 0.5rem;">
+                    售价：300g | 耐久：200 | 用途：砍树
+                </div>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🪓</div>
+                <div class="tool-name">铁斧</div>
+                <div class="tool-material">🔩 3 个金矿 + 12 个秘银</div>
+                <div style="color: #666; margin-top: 0.5rem;">
+                    售价：600g | 耐久：450 | 用途：砍树、挖矿
+                </div>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🪓</div>
+                <div class="tool-name">金斧</div>
+                <div class="tool-material">🌟 1 个陨铁</div>
+                <div style="color: #666; margin-top: 0.5rem;">
+                    售价：900g | 耐久：无限 | 用途：砍树、挖矿
+                </div>
+            </div>
+
+            <!-- 使用建议 -->
+            <div class="usage-tips">
+                <h3>💡 矿石使用建议</h3>
+                <ul style="margin-left: 1rem; line-height: 2;">
+                    <li><strong>前期（第 1-2 周）:</strong> 只挖铜矿、铁矿，制作基础工具</li>
+                    <li><strong>中期（第 3 周）:</strong> 挖到 26 层，收集金矿和金铲</li>
+                    <li><strong>后期（第 4 周）:</strong> 挖到 48 层，收集秘银、陨铁</li>
+                    <li><strong>建议:</strong> 金铲是永久工具，最划算</li>
+                    <li><strong>秘银/陨铁:</strong> 主要用于制作大师级装备</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stardew Valley 攻略站</p>
+        </div>
+    </footer>
+</body>
+</html>

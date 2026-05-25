@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>季节规划 - Stardew Valley 攻略站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .season-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .season-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .season-card:hover {
+            transform: translateY(-4px);
+        }
+        .season-icon {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .season-name {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .season-crops {
+            list-style: none;
+            padding: 0;
+        }
+        .season-crops li {
+            padding: 0.3rem 0;
+            border-bottom: 1px dashed var(--border-color);
+            font-size: 0.9rem;
+        }
+        .season-crops li:last-child {
+            border-bottom: none;
+        }
+        .best-crop {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🌾 Stardew Valley 攻略站</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">⬅ 种植指南</a>
+                <a href="crops.html" class="nav-link">📋 作物大全</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>🗓️ 季节规划</h1>
+            <p>掌握各季节最佳作物安排，制定高效种植计划！</p>
+
+            <!-- 春季 -->
+            <div class="season-card">
+                <div class="season-icon">🌸</div>
+                <div class="season-name">春季 (Spring)</div>
+                <ul class="season-crops">
+                    <li><strong>前期:</strong> 豌豆 (4 天)、胡萝卜 (4 天)、土豆 (4 天)、玉米 (5 天)</li>
+                    <li><strong>后期:</strong> 甜菜 (8 天)、葡萄 (9 天)、蓝莓 (14 天)</li>
+                    <li><strong>推荐:</strong> 玉米、豌豆 (快速回本)</li>
+                    <li class="best-crop">⭐ 最佳作物：甜菜</li>
+                </ul>
+            </div>
+
+            <!-- 夏季 -->
+            <div class="season-card">
+                <div class="season-icon">☀️</div>
+                <div class="season-name">夏季 (Summer)</div>
+                <ul class="season-crops">
+                    <li><strong>前期:</strong> 玉米 (5 天)、番茄 (4 天)、茄子 (6 天)、南瓜 (13 天)</li>
+                    <li><strong>后期:</strong> 甜菜 (9 天)、葡萄 (9 天)、西瓜 (9 天)</li>
+                    <li><strong>推荐:</strong> 玉米、番茄 (快速回本)</li>
+                    <li class="best-crop">⭐ 最佳作物：甜菜</li>
+                </ul>
+            </div>
+
+            <!-- 秋季 -->
+            <div class="season-card">
+                <div class="season-icon">🍂</div>
+                <div class="season-name">秋季 (Fall)</div>
+                <ul class="season-crops">
+                    <li><strong>前期:</strong> 玉米 (4 天)、萝卜 (4 天)、倭南瓜 (9 天)</li>
+                    <li><strong>后期:</strong> 甜菜 (8 天)、葡萄 (9 天)、葫芦 (15 天)</li>
+                    <li><strong>推荐:</strong> 甜菜、葡萄 (赚钱黄金期)</li>
+                    <li class="best-crop">⭐ 最佳作物：甜菜</li>
+                </ul>
+            </div>
+
+            <!-- 冬季 -->
+            <div class="season-card">
+                <div class="season-icon">❄️</div>
+                <div class="season-name">冬季 (Winter)</div>
+                <ul class="season-crops">
+                    <li><strong>室内:</strong> 蓝莓 (14 天)、草莓 (14 天)、葡萄藤 (14 天)</li>
+                    <li><strong>推荐:</strong> 葡萄藤 (性价比最高)</li>
+                    <li class="best-crop">⭐ 最佳作物：葡萄藤</li>
+                </ul>
+            </div>
+
+            <!-- 种植时间表 -->
+            <div class="tip-section">
+                <h3>📅 每日种植计划</h3>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                    <thead style="background: var(--bg-color);">
+                        <tr>
+                            <th style="padding: 0.5rem; text-align: left;">时间</th>
+                            <th style="padding: 0.5rem; text-align: left;">春季</th>
+                            <th style="padding: 0.5rem; text-align: left;">夏季</th>
+                            <th style="padding: 0.5rem; text-align: left;">秋季</th>
+                            <th style="padding: 0.5rem; text-align: left;">冬季</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>第 1 周</strong></td>
+                            <td style="padding: 0.5rem;">豌豆、土豆</td>
+                            <td style="padding: 0.5rem;">玉米、番茄</td>
+                            <td style="padding: 0.5rem;">玉米、萝卜</td>
+                            <td style="padding: 0.5rem;">- (室内种植)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>第 2 周</strong></td>
+                            <td style="padding: 0.5rem;">转甜菜、葡萄</td>
+                            <td style="padding: 0.5rem;">玉米、甜菜</td>
+                            <td style="padding: 0.5rem;">甜菜、葡萄</td>
+                            <td style="padding: 0.5rem;">- (葡萄藤)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>第 3 周</strong></td>
+                            <td style="padding: 0.5rem;">甜菜、葡萄</td>
+                            <td style="padding: 0.5rem;">甜菜、葡萄、西瓜</td>
+                            <td style="padding: 0.5rem;">甜菜、葡萄、葫芦</td>
+                            <td style="padding: 0.5rem;">- (蓝莓)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>第 4 周</strong></td>
+                            <td style="padding: 0.5rem;">甜菜、葡萄</td>
+                            <td style="padding: 0.5rem;">甜菜、葡萄</td>
+                            <td style="padding: 0.5rem;">甜菜、葡萄</td>
+                            <td style="padding: 0.5rem;">- (蓝莓)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 作物生长周期表 -->
+            <div class="tip-section">
+                <h3>🌱 常见作物生长周期</h3>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                    <thead style="background: var(--bg-color);">
+                        <tr>
+                            <th style="padding: 0.5rem; text-align: left;">作物</th>
+                            <th style="padding: 0.5rem; text-align: left;">春季</th>
+                            <th style="padding: 0.5rem; text-align: left;">夏季</th>
+                            <th style="padding: 0.5rem; text-align: left;">秋季</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>豌豆</strong></td>
+                            <td style="padding: 0.5rem; text-align: center;">4 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>胡萝卜</strong></td>
+                            <td style="padding: 0.5rem; text-align: center;">4 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>土豆</strong></td>
+                            <td style="padding: 0.5rem; text-align: center;">4 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>玉米</strong></td>
+                            <td style="padding: 0.5rem; text-align: center;">5 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">5 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">4 天</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>番茄</strong></td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                            <td style="padding: 0.5rem; text-align: center;">4 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>茄子</strong></td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                            <td style="padding: 0.5rem; text-align: center;">6 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>南瓜</strong></td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                            <td style="padding: 0.5rem; text-align: center;">13 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">-</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>甜菜</strong></td>
+                            <td style="padding: 0.5rem; text-align: center;">8 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">9 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">8 天</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem; text-align: left;"><strong>葡萄</strong></td>
+                            <td style="padding: 0.5rem; text-align: center;">9 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">9 天</td>
+                            <td style="padding: 0.5rem; text-align: center;">9 天</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stardew Valley 攻略站</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>采矿指南 - Stardew Valley 攻略站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .mine-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .mine-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .mine-card:hover {
+            transform: translateY(-4px);
+        }
+        .mine-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .mine-name {
+            font-weight: bold;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+        .mine-desc {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .resource-list {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .resource-item {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .resource-item:last-child {
+            border-bottom: none;
+        }
+        .resource-name {
+            font-weight: bold;
+            color: var(--text-color);
+        }
+        .resource-tip {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🌾 Stardew Valley 攻略站</h1>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">⬅ 返回首页</a>
+                <a href="routes.html" class="nav-link">🗺️ 矿洞路线</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>⛏️ 采矿指南</h1>
+            <p>探索地下世界，收集矿石资源！</p>
+
+            <!-- 矿洞类型 -->
+            <div class="mine-grid">
+                <div class="mine-card">
+                    <div class="mine-icon">🏔️</div>
+                    <div class="mine-name">矿洞</div>
+                    <div class="mine-desc">日常采矿，怪物简单，适合新手</div>
+                </div>
+                <div class="mine-card">
+                    <div class="mine-icon">💀</div>
+                    <div class="mine-name">热浪矿坑</div>
+                    <div class="mine-desc">岩浆环境，稀有矿石，注意躲避高温</div>
+                </div>
+                <div class="mine-card">
+                    <div class="mine-icon">👻</div>
+                    <div class="mine-name">洞穴</div>
+                    <div class="mine-desc">黑暗环境，冰系怪物，需要照明</div>
+                </div>
+                <div class="mine-card">
+                    <div class="mine-icon">🐲</div>
+                    <div class="mine-name">蛇发女妖洞穴</div>
+                    <div class="mine-desc">传说之地，稀有素材，高难度</div>
+                </div>
+            </div>
+
+            <!-- 资源获取 -->
+            <div class="resource-list">
+                <h2>💎 矿石资源</h2>
+                <div class="resource-item">
+                    <span class="resource-name">铁矿</span>
+                    <span class="resource-tip">矿洞 1 层，制作工具</span>
+                </div>
+                <div class="resource-item">
+                    <span class="resource-name">铜矿</span>
+                    <span class="resource-tip">矿洞 1 层，制作初级装备</span>
+                </div>
+                <div class="resource-item">
+                    <span class="resource-name">金矿</span>
+                    <span class="resource-tip">深坑，制作高级工具</span>
+                </div>
+                <div class="resource-item">
+                    <span class="resource-name">煤炭</span>
+                    <span class="resource-tip">深坑，制作燃料</span>
+                </div>
+                <div class="resource-item">
+                    <span class="resource-name">秘银</span>
+                    <span class="resource-tip">热浪矿坑，制作秘银装备</span>
+                </div>
+                <div class="resource-item">
+                    <span class="resource-name">陨铁</span>
+                    <span class="resource-tip">蛇发女妖洞穴，制作大师装备</span>
+                </div>
+            </div>
+
+            <!-- 怪物分布 -->
+            <div class="quick-tips">
+                <h2>👾 怪物分布</h2>
+                <ul>
+                    <li><strong>1-5 层:</strong> 蝙蝠、苍蝇、蛆虫（简单）</li>
+                    <li><strong>6-10 层:</strong> 蜘蛛、史莱姆（中等）</li>
+                    <li><strong>11-20 层:</strong> 石鬼面、食人魔（较难）</li>
+                    <li><strong>20 层以上:</strong> 冰咒僵尸、熔岩巨像（困难）</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stardew Valley 攻略站</p>
+        </div>
+    </footer>
+</body>
+</html>

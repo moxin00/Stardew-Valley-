@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>肥料使用 - Stardew Valley 攻略站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .fertilizer-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .fertilizer-icon {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .fertilizer-name {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .fertilizer-price {
+            text-align: center;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .fertilizer-benefit {
+            background: var(--bg-color);
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-top: 1rem;
+        }
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .comparison-table th {
+            background: var(--primary-color);
+            color: white;
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .usage-tips {
+            background: var(--bg-color);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        .usage-tips h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .usage-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .usage-list li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🌾 Stardew Valley 攻略站</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">⬅ 种植指南</a>
+                <a href="crops.html" class="nav-link">📋 作物大全</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>🧪 肥料使用技巧</h1>
+            <p>合理使用肥料，大幅提升作物产量！</p>
+
+            <!-- 肥料种类 -->
+            <div class="fertilizer-card">
+                <div class="fertilizer-icon">💧</div>
+                <div class="fertilizer-name">普通肥料</div>
+                <div class="fertilizer-price">价格：50g</div>
+                <div class="fertilizer-benefit">
+                    <strong>效果:</strong> 每天提升 2 倍产量<br>
+                    <strong>适用:</strong> 所有作物（前期大量使用）<br>
+                    <strong>评价:</strong> 性价比最高
+                </div>
+            </div>
+
+            <div class="fertilizer-card">
+                <div class="fertilizer-icon">✨</div>
+                <div class="fertilizer-name">高级肥料</div>
+                <div class="fertilizer-price">价格：400g</div>
+                <div class="fertilizer-benefit">
+                    <strong>效果:</strong> 每天提升 2 倍产量（第 1 天就生效）<br>
+                    <strong>适用:</strong> 所有作物（后期使用）<br>
+                    <strong>评价:</strong> 前期不划算，第 4 周后再用
+                </div>
+            </div>
+
+            <div class="fertilizer-card">
+                <div class="fertilizer-icon">🌿</div>
+                <div class="fertilizer-name">绿肥</div>
+                <div class="fertilizer-price">价格：20-50g</div>
+                <div class="fertilizer-benefit">
+                    <strong>效果:</strong> 提供 1 天肥料效果（1 倍产量）<br>
+                    <strong>适用:</strong> 快速作物补肥<br>
+                    <strong>评价:</strong> 不推荐，性价比低
+                </div>
+            </div>
+
+            <!-- 肥料对比 -->
+            <h2>📊 肥料性价比对比</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>肥料类型</th>
+                        <th>价格</th>
+                        <th>每日效果</th>
+                        <th>推荐周期</th>
+                        <th>评价</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>普通肥料</strong></td>
+                        <td>50g</td>
+                        <td>2 倍（第 2 天起）</td>
+                        <td>第 2-3 周</td>
+                        <td>⭐⭐⭐⭐⭐ 强烈推荐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>高级肥料</strong></td>
+                        <td>400g</td>
+                        <td>2 倍（第 1 天）</td>
+                        <td>第 4 周后</td>
+                        <td>⭐⭐⭐ 后期使用</td>
+                    </tr>
+                    <tr>
+                        <td><strong>绿肥</strong></td>
+                        <td>20-50g</td>
+                        <td>1 倍（1 天）</td>
+                        <td>不推荐</td>
+                        <td>⭐ 不推荐</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- 使用技巧 -->
+            <div class="usage-tips">
+                <h3>💡 肥料使用技巧</h3>
+                <ul class="usage-list">
+                    <li><strong>最佳使用时机:</strong> 第 2 周开始（赚到第一桶金后）</li>
+                    <li><strong>每日施肥:</strong> 每天早上 6 点前给所有作物施肥（不要中断）</li>
+                    <li><strong>中断后果:</strong> 中断施肥后需要重新施肥才能继续获得增益</li>
+                    <li><strong>资金分配:</strong> 第 2 周优先买肥料，第 3 周开始升级设施</li>
+                    <li><strong>前期预算:</strong> 准备 1000g 肥料钱（约买 20 个普通肥料）</li>
+                    <li><strong>后期转换:</strong> 当鱼和矿石收入稳定后，转用高级肥料</li>
+                </ul>
+            </div>
+
+            <!-- 收益提升演示 -->
+            <div class="usage-tips">
+                <h3>💰 收益提升演示</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>作物</th>
+                            <th>无肥料</th>
+                            <th>有肥料</th>
+                            <th>提升</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>玉米</td>
+                            <td>85g → 2 倍</td>
+                            <td>85g → 170g</td>
+                            <td>+85g</td>
+                        </tr>
+                        <tr>
+                            <td>豌豆</td>
+                            <td>90g → 2 倍</td>
+                            <td>90g → 180g</td>
+                            <td>+90g</td>
+                        </tr>
+                        <tr>
+                            <td>甜菜</td>
+                            <td>110g → 2 倍</td>
+                            <td>110g → 220g</td>
+                            <td>+110g</td>
+                        </tr>
+                        <tr>
+                            <td>8 块甜菜</td>
+                            <td>880g</td>
+                            <td>1760g</td>
+                            <td>+880g</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 1rem; text-align: center; color: var(--primary-color); font-weight: bold;">
+                    💡 每块地使用肥料每天可多赚约 100g+！
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stardew Valley 攻略站</p>
+        </div>
+    </footer>
+</body>
+</html>

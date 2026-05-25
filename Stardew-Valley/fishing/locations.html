@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钓点位置 - Stardew Valley 攻略站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .location-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .location-card:hover {
+            transform: translateY(-4px);
+        }
+        .location-icon {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .location-name {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .location-fish {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        .location-fish li {
+            padding: 0.3rem 0;
+            font-size: 0.85rem;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .location-fish li:last-child {
+            border-bottom: none;
+        }
+        .season-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .spring { background: #a8e6cf; }
+        .summer { background: #fbd38d; }
+        .fall { background: #ffaaa5; }
+        .winter { background: #d8b4b4; }
+        .tip-box {
+            background: var(--bg-color);
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+        }
+        .tip-box h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🌾 Stardew Valley 攻略站</h1>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">⬅ 返回首页</a>
+                <a href="index.html" class="nav-link">🐟 钓鱼图鉴</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>📍 钓点位置指南</h1>
+            <p>掌握所有钓点位置，高效钓鱼！</p>
+
+            <!-- 河流钓点 -->
+            <div class="location-grid">
+                <!-- 河面钓点 -->
+                <div class="location-card">
+                    <div class="location-icon">🌊</div>
+                    <div class="location-name">河面钓点</div>
+                    <p style="text-align: center; color: #666;">覆盖河流大部分区域</p>
+                    <ul class="location-fish">
+                        <li><span class="season-dot spring"></span>鲤鱼、虾、河虾</li>
+                        <li><span class="season-dot summer"></span>鲈鱼、狗鱼、比目鱼、鲟鱼</li>
+                        <li><span class="season-dot fall"></span>狗鱼、比目鱼、鲟鱼</li>
+                    </ul>
+                </div>
+
+                <!-- 浅滩 -->
+                <div class="location-card">
+                    <div class="location-icon">🪨</div>
+                    <div class="location-name">浅滩</div>
+                    <p style="text-align: center; color: #666;">河岸边浅水区域</p>
+                    <ul class="location-fish">
+                        <li><span class="season-dot spring"></span>鲑鱼、虾</li>
+                        <li><span class="season-dot summer"></span>比目鱼、虾</li>
+                        <li><span class="season-dot fall"></span>比目鱼、虾、鲑鱼</li>
+                    </ul>
+                </div>
+
+                <!-- 深水 -->
+                <div class="location-card">
+                    <div class="location-icon">🐋</div>
+                    <div class="location-name">深水</div>
+                    <p style="text-align: center; color: #666;">河流深水区</p>
+                    <ul class="location-fish">
+                        <li><span class="season-dot spring"></span>鲟鱼</li>
+                        <li><span class="season-dot summer"></span>鲟鱼、鲈鱼</li>
+                        <li><span class="season-dot fall"></span>鲟鱼</li>
+                    </ul>
+                </div>
+
+                <!-- 小池塘 -->
+                <div class="location-card">
+                    <div class="location-icon">🐊</div>
+                    <div class="location-name">小池塘</div>
+                    <p style="text-align: center; color: #666;">农场东南角的池塘</p>
+                    <ul class="location-fish">
+                        <li><span class="season-dot spring"></span>虾、河虾、鲑鱼</li>
+                        <li><span class="season-dot summer"></span>比目鱼、虾</li>
+                        <li><span class="season-dot fall"></span>虾</li>
+                    </ul>
+                </div>
+
+                <!-- 温泉 -->
+                <div class="location-card">
+                    <div class="location-icon">♨️</div>
+                    <div class="location-name">温泉</div>
+                    <p style="text-align: center; color: #666;">矿洞 4 层入口旁</p>
+                    <ul class="location-fish">
+                        <li><span class="season-dot summer"></span>所有夏季鱼类 + 特殊鱼种</li>
+                    </ul>
+                    <div class="tip-box">
+                        <h4>💡 特殊</h4>
+                        <p style="margin: 0;">只有夏季开放，可以钓到大部分鱼</p>
+                    </div>
+                </div>
+
+                <!-- 码头 -->
+                <div class="location-card">
+                    <div class="location-icon">⛵</div>
+                    <div class="location-name">码头</div>
+                    <p style="text-align: center; color: #666;">需要解锁，靠近海边</p>
+                    <ul class="location-fish">
+                        <li><span class="season-dot summer"></span>鲈鱼、比目鱼、海鳟鱼</li>
+                        <li><span class="season-dot fall"></span>狗鱼、比目鱼、海鳟鱼</li>
+                    </ul>
+                </div>
+
+                <!-- 海边钓点 -->
+                <div class="location-card">
+                    <div class="location-icon">🏖️</div>
+                    <div class="location-name">海边钓点</div>
+                    <p style="text-align: center; color: #666;">位于海边码头旁</p>
+                    <ul class="location-fish">
+                        <li><span class="season-dot summer"></span>海鳟鱼、比目鱼、比目鲽</li>
+                        <li><span class="season-dot fall"></span>海鳟鱼、比目鱼、海鳗</li>
+                    </ul>
+                </div>
+
+                <!-- 火山口 -->
+                <div class="location-card">
+                    <div class="location-icon">🌋</div>
+                    <div class="location-name">火山口</div>
+                    <p style="text-align: center; color: #666;">热浪矿坑最深处的岩浆池</p>
+                    <ul class="location-fish">
+                        <li><span class="season-dot summer"></span>鲈鱼、狗鱼、各种大型鱼</li>
+                    </ul>
+                    <div class="tip-box">
+                        <h4>💡 特殊</h4>
+                        <p style="margin: 0;">岩浆水域，夏季专属钓点</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 鱼饵建议 -->
+            <div class="usage-tips">
+                <h3>🪱 鱼饵建议</h3>
+                <ul class="usage-list">
+                    <li><strong>虫子 (25g):</strong> 万能鱼饵，适合钓几乎所有小型鱼（鲤鱼、河虾等）</li>
+                    <li><strong>小麦 (20g):</strong> 适合钓食草鱼（鲤鱼、虾等）</li>
+                    <li><strong>玉米 (100g):</strong> 适合钓大型鱼（比目鱼、鲟鱼等）</li>
+                    <li><strong>诱饵块 (700g):</strong> 制作后适合所有鱼，性价比最高</li>
+                </ul>
+            </div>
+
+            <!-- 鱼竿升级路径 -->
+            <div class="usage-tips">
+                <h3>🎣 鱼竿升级路径</h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr style="background: var(--bg-color);">
+                        <th style="padding: 0.5rem; text-align: left;">鱼竿</th>
+                        <th style="padding: 0.5rem; text-align: left;">售价</th>
+                        <th style="padding: 0.5rem; text-align: left;">购买地点</th>
+                        <th style="padding: 0.5rem; text-align: left;">钓获上限</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem;"><strong>基础鱼竿</strong></td>
+                        <td style="padding: 0.5rem;">-</td>
+                        <td style="padding: 0.5rem;">初始装备</td>
+                        <td style="padding: 0.5rem;">50 大小</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem;"><strong>碳纤维鱼竿</strong></td>
+                        <td style="padding: 0.5rem;">150g</td>
+                        <td style="padding: 0.5rem;">路易斯 (钓鱼协会)</td>
+                        <td style="padding: 0.5rem;">100 大小</td>
+                    </tr>
+                    <tr style="background: var(--bg-color);">
+                        <td style="padding: 0.5rem;"><strong>黄金鱼竿</strong></td>
+                        <td style="padding: 0.5rem;">1000g</td>
+                        <td style="padding: 0.5rem;">路易斯 (需要 5 颗珍珠)</td>
+                        <td style="padding: 0.5rem;">500 大小</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem;"><strong>千棘钩</strong></td>
+                        <td style="padding: 0.5rem;">1g</td>
+                        <td style="padding: 0.5rem;">制作（1 个铁砧 + 10 根千棘草）</td>
+                        <td style="padding: 0.5rem;">无上限</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stardew Valley 攻略站</p>
+        </div>
+    </footer>
+</body>
+</html>
